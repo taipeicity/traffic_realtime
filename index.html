@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>臺北市政府 交通即時資料 開放資料專區 by taipeicity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">臺北市政府 交通即時資料 開放資料專區</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/taipeicity/traffic_realtime" class="btn">View on GitHub</a>
+      <a href="https://github.com/taipeicity/traffic_realtime/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/taipeicity/traffic_realtime/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="資料集列表-資料為-json-格式" class="anchor" href="#%E8%B3%87%E6%96%99%E9%9B%86%E5%88%97%E8%A1%A8-%E8%B3%87%E6%96%99%E7%82%BA-json-%E6%A0%BC%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>資料集列表 (資料為 JSON 格式)</h2>
+
+<p>若您有任何問題，歡迎來信 <a href="mailto:services@mail.taipei.gov.tw">services@mail.taipei.gov.tw</a> 或來電(02)2720-8889#2858（李先生），感謝您！</p>
+
+<p><strong>本網頁提供之檔案格式為經gz壓縮之json檔，請下載後解壓縮使用（以部分瀏覽器如Chrome下載後會自動解壓縮，建議直接以文字編輯器檢視，請留意！）</strong></p>
+
+<h3>
+<a id="公車即時資料-說明文件" class="anchor" href="#%E5%85%AC%E8%BB%8A%E5%8D%B3%E6%99%82%E8%B3%87%E6%96%99-%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>公車即時資料 (<a href="https://drive.google.com/file/d/0BzL9ldn5Fg6dcVZ3eUgybkdiTXc/view?usp=sharing">說明文件</a>)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PathDetail</td>
+<td>附屬路線與路線對應資訊</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/PathDetail">http://data.taipei/bus/PathDetail</a></td>
+</tr>
+<tr>
+<td>CarInfo</td>
+<td>車輛基本資訊</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/CarInfo">http://data.taipei/bus/CarInfo</a></td>
+</tr>
+<tr>
+<td>OrgPathAttribute</td>
+<td>路線、營業站對應</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/OrgPathAttribute">http://data.taipei/bus/OrgPathAttribute</a></td>
+</tr>
+<tr>
+<td>PROVIDER</td>
+<td>業者營運基本資料</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/PROVIDER">http://data.taipei/bus/PROVIDER</a></td>
+</tr>
+<tr>
+<td>ROUTE</td>
+<td>路線</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/ROUTE">http://data.taipei/bus/ROUTE</a></td>
+</tr>
+<tr>
+<td>ROUTEGeom</td>
+<td>公車路線線型開放格式</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/ROUTEGeom">http://data.taipei/bus/ROUTEGeom</a></td>
+</tr>
+<tr>
+<td>DownloadShp</td>
+<td>公車路線線型 shp 格式</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/DownloadShp">http://data.taipei/bus/DownloadShp</a></td>
+</tr>
+<tr>
+<td>TimeTable</td>
+<td>預定班表資訊</td>
+<td>每小時</td>
+<td><a href="http://data.taipei/bus/TimeTable">http://data.taipei/bus/TimeTable</a></td>
+</tr>
+<tr>
+<td>SemiTimeTable</td>
+<td>機動班次時刻表</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/SemiTimeTable">http://data.taipei/bus/SemiTimeTable</a></td>
+</tr>
+<tr>
+<td>BUSDATA</td>
+<td>定時車機資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/BUSDATA">http://data.taipei/bus/BUSDATA</a></td>
+</tr>
+<tr>
+<td>BUSEVENT</td>
+<td>定點車機資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/BUSEVENT">http://data.taipei/bus/BUSEVENT</a></td>
+</tr>
+<tr>
+<td>IStopPath</td>
+<td>智慧型站牌所屬路線</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/IStopPath">http://data.taipei/bus/IStopPath</a></td>
+</tr>
+<tr>
+<td>IStop</td>
+<td>智慧型站牌</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/IStop">http://data.taipei/bus/IStop</a></td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>站牌</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/Stop">http://data.taipei/bus/Stop</a></td>
+</tr>
+<tr>
+<td>CarUnusual</td>
+<td>車機異常資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/CarUnusual">http://data.taipei/bus/CarUnusual</a></td>
+</tr>
+<tr>
+<td>StopLocation</td>
+<td>站位資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/StopLocation">http://data.taipei/bus/StopLocation</a></td>
+</tr>
+<tr>
+<td>EstimateTime</td>
+<td>預估到站時間</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/bus/EstimateTime">http://data.taipei/bus/EstimateTime</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="捷運列車到站資料-說明文件" class="anchor" href="#%E6%8D%B7%E9%81%8B%E5%88%97%E8%BB%8A%E5%88%B0%E7%AB%99%E8%B3%87%E6%96%99-%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>捷運列車到站資料 (<a href="http://data.taipei/opendata/datalist/datasetMeta?oid=6556e1e8-c908-42d5-b984-b3f7337b139b">說明文件</a>)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>捷運列車到站資料</td>
+<td>每3分鐘</td>
+<td><a href="http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&amp;rid=55ec6d6e-dc5c-4268-a725-d04cc262172b">http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&amp;rid=55ec6d6e-dc5c-4268-a725-d04cc262172b</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="捷運列車相關資料非即時" class="anchor" href="#%E6%8D%B7%E9%81%8B%E5%88%97%E8%BB%8A%E7%9B%B8%E9%97%9C%E8%B3%87%E6%96%99%E9%9D%9E%E5%8D%B3%E6%99%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>捷運列車相關資料(非即時)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>捷運免費接駁車路線</td>
+<td>不定時</td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=f278aa11-f97f-4a6e-a3de-51cb8313524a">http://data.taipei/opendata/datalist/datasetMeta?oid=f278aa11-f97f-4a6e-a3de-51cb8313524a</a></td>
+</tr>
+<tr>
+<td></td>
+<td>臺北捷運轉乘車站轉乘步行時間</td>
+<td>不定時</td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=782c2b71-8f5a-4575-9bf2-e86999be2863">http://data.taipei/opendata/datalist/datasetMeta?oid=782c2b71-8f5a-4575-9bf2-e86999be2863</a></td>
+</tr>
+<tr>
+<td></td>
+<td>臺北捷運高運量系統及文湖線相鄰兩站間之行駛時間、停靠站時間</td>
+<td>不定時</td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=513e97fe-6a98-4a0d-b7dc-11122c8638d4">http://data.taipei/opendata/datalist/datasetMeta?oid=513e97fe-6a98-4a0d-b7dc-11122c8638d4</a></td>
+</tr>
+<tr>
+<td></td>
+<td>臺北都會區大眾捷運系統路網圖</td>
+<td>不定時</td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=afccd2ac-75b1-4362-9099-45983e332776">http://data.taipei/opendata/datalist/datasetMeta?oid=afccd2ac-75b1-4362-9099-45983e332776</a></td>
+</tr>
+<tr>
+<td></td>
+<td>大台北地區捷運車站出入口</td>
+<td>不定時</td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=cfa4778c-62c1-497b-b704-756231de348b">http://data.taipei/opendata/datalist/datasetMeta?oid=cfa4778c-62c1-497b-b704-756231de348b</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="交控即時資料-說明文件" class="anchor" href="#%E4%BA%A4%E6%8E%A7%E5%8D%B3%E6%99%82%E8%B3%87%E6%96%99-%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>交控即時資料 (<a href="http://www.dot.gov.taipei/public/mmo/dot/%E8%87%BA%E5%8C%97%E5%B8%82%E4%BA%A4%E9%80%9A%E6%8E%A7%E5%88%B6%E4%B8%AD%E5%BF%83%E8%B3%87%E6%96%99%E5%BA%AB%E4%BB%8B%E6%8E%A5%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6.pdf">說明文件</a>)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VD</td>
+<td>道路速率</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/tisv/VD">http://data.taipei/tisv/VD</a></td>
+</tr>
+<tr>
+<td>VDDATA</td>
+<td>車輛偵測器(VD)資料</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/tisv/VDDATA">http://data.taipei/tisv/VDDATA</a></td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>資訊可變標誌(CMS)顯示內容</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/tisv/CMS">http://data.taipei/tisv/CMS</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="停車場即時資料-說明文件" class="anchor" href="#%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%8D%B3%E6%99%82%E8%B3%87%E6%96%99-%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>停車場即時資料 (<a href="https://drive.google.com/file/d/0BzL9ldn5Fg6dTWF3ZnRZOHFTV1E/view">說明文件</a>)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TCMSV_ALLDESC</td>
+<td>臺北市停車場資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/tcmsv/alldesc">http://data.taipei/tcmsv/alldesc</a></td>
+</tr>
+<tr>
+<td>TCMSV_ALLAVAILABLE</td>
+<td>剩餘停車位數</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/tcmsv/allavailable">http://data.taipei/tcmsv/allavailable</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="youbike-即時資料-說明文件" class="anchor" href="#youbike-%E5%8D%B3%E6%99%82%E8%B3%87%E6%96%99-%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Youbike 即時資料 (<a href="http://www.dot.gov.taipei/public/mmo/dot/YouBike_JSON%E6%AA%94%E6%A1%88%E8%AA%AA%E6%98%8E(%E4%BF%AE%E6%AD%A3%E7%89%88)_%E5%B1%80%E7%B6%B2.pdf">說明文件</a>)</h3>
+
+<table>
+<thead>
+<tr>
+<th>資料集</th>
+<th>說明</th>
+<th>頻率</th>
+<th>連結</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>youbike</td>
+<td>youbike即時資訊</td>
+<td>每分鐘</td>
+<td><a href="http://data.taipei/youbike">http://data.taipei/youbike</a></td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/taipeicity/traffic_realtime">臺北市政府 交通即時資料 開放資料專區</a> is maintained by <a href="https://github.com/taipeicity">taipeicity</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
