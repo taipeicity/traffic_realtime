@@ -182,7 +182,7 @@ pre {
 /* Tables */
 
 table {
-  width:100%;
+  width:120%;
 }
 
 table {
@@ -203,6 +203,7 @@ th {
 td {
   padding: 10px;
 	background: #ccc;
+	word-break:keep-all;
  }
 
 
@@ -217,7 +218,7 @@ td {
 header {
 	background-color: #171717;
 	color: #FDFDFB;
-  width:170px;
+  width:140px;
   float:left;
   position:fixed;
 	border: 1px solid #000;
@@ -319,7 +320,7 @@ a.buttons:hover {
 /* Section - for main page content */
 
 section {
-  width:650px;
+  width:700px;
   float:right;
   padding-bottom:50px;
 }
