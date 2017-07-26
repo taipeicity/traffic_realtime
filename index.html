@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <script src="javascripts/scale.fix.js"></script>
+	<script type="text/javascript"  src="javascripts/normal.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -44,113 +47,284 @@
 <thead>
 <tr>
 <th>資料集</th>
+<th>城市</th>
 <th>說明</th>
 <th>頻率</th>
-<th>連結</th>
+<th>檔案連結</th>
+<th>資料集網址</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>PathDetail</td>
+<td>臺北市</td>
 <td>附屬路線與路線對應資訊</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/PathDetail">http://data.taipei/bus/PathDetail</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetPathDetail.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetPathDetail.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=174d780f-6e87-45d8-b779-c608c6f01432">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetPathDetail.gz')"> </td>
+</tr>
+<tr>
+<td>PathDetail</td>
+<td>新北市</td>
+<td>附屬路線與路線對應資訊</td>
+<td>每小時</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetPathDetail.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetPathDetail.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=2a8f5f42-942c-4974-8366-b44e90ad9701">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetPathDetail.gz')"> </td>
 </tr>
 <tr>
 <td>CarInfo</td>
+<td>臺北市</td>
 <td>車輛基本資訊</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/CarInfo">http://data.taipei/bus/CarInfo</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetCarInfo.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetCarInfo.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=e1281862-c974-49ca-837e-77f4074e32eb">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetCarInfo.gz')"> </td>
+</tr>
+<tr>
+<td>CarInfo</td>
+<td>新北市</td>
+<td>車輛基本資訊</td>
+<td>每小時</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarInfo.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarInfo.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=dac7bcd9-c1d2-43ea-8d2d-546ae5de2853">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarInfo.gz')"> </td>
 </tr>
 <tr>
 <td>OrgPathAttribute</td>
+<td>臺北市</td>
 <td>路線、營業站對應</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/OrgPathAttribute">http://data.taipei/bus/OrgPathAttribute</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetOrgPathAttribute.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetOrgPathAttribute.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=2181b885-02da-4124-a673-3ca6546c1f1d">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetOrgPathAttribute.gz')"> </td>
+</tr>
+<tr>
+<td>OrgPathAttribute</td>
+<td>新北市</td>
+<td>路線、營業站對應</td>
+<td>每小時</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetOrgPathAttribute.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetOrgPathAttribute.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=73123fbd-f9fa-4f5b-83de-af36b10c063d">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetOrgPathAttribute.gz')"> </td>
 </tr>
 <tr>
 <td>PROVIDER</td>
+<td>臺北市</td>
 <td>業者營運基本資料</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/PROVIDER">http://data.taipei/bus/PROVIDER</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetProvider.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetProvider.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=33a7cd78-cf37-45bd-92b0-1f0d97339ff0">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetProvider.gz')"> </td>
+</tr>
+<tr>
+<td>PROVIDER</td>
+<td>新北市</td>
+<td>業者營運基本資料</td>
+<td>每小時</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetProvider.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetProvider.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=1d6ddc52-4927-4cd5-96f3-a177abc9f654">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetProvider.gz')"> </td>
 </tr>
 <tr>
 <td>ROUTE</td>
+<td>臺北市</td>
 <td>路線</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/ROUTE">http://data.taipei/bus/ROUTE</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetRoute.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetRoute.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=6a03b03d-90d1-4d9e-a952-c940fd869772">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetRoute.gz')"> </td>
 </tr>
 <tr>
-<td>ROUTEGeom</td>
-<td>公車路線線型開放格式</td>
+<td>ROUTE</td>
+<td>新北市</td>
+<td>路線</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/ROUTEGeom">http://data.taipei/bus/ROUTEGeom</a></td>
-</tr>
-<tr>
-<td>DownloadShp</td>
-<td>公車路線線型 shp 格式</td>
-<td>每小時</td>
-<td><a href="http://data.taipei/bus/DownloadShp">http://data.taipei/bus/DownloadShp</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetRoute.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetRoute.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=1f5998d2-d9e4-4d9f-8cbb-fe2d29b99c3c">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetRoute.gz')"> </td>
 </tr>
 <tr>
 <td>TimeTable</td>
+<td>臺北市</td>
 <td>預定班表資訊</td>
 <td>每小時</td>
-<td><a href="http://data.taipei/bus/TimeTable">http://data.taipei/bus/TimeTable</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetTimeTable.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetTimeTable.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=7f284567-cbaa-4153-a289-9ce10820b06c">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetTimeTable.gz')"> </td>
+</tr>
+<tr>
+<td>TimeTable</td>
+<td>新北市</td>
+<td>預定班表資訊</td>
+<td>每小時</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetTimeTable.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetTimeTable.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=26cc48f3-9896-4218-bdcf-17b9be82cdd1">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetTimeTable.gz')"> </td>
 </tr>
 <tr>
 <td>SemiTimeTable</td>
+<td>臺北市</td>
 <td>機動班次時刻表</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/SemiTimeTable">http://data.taipei/bus/SemiTimeTable</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetSemiTimeTable.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetSemiTimeTable.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=3e9f580d-ef7d-4389-939f-e93f7b9af535">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetSemiTimeTable.gz')"> </td>
+</tr>
+<tr>
+<td>SemiTimeTable</td>
+<td>新北市</td>
+<td>機動班次時刻表</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetSemiTimeTable.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetSemiTimeTable.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=c16d185e-ba3c-4eaa-be92-51fca0e3a364">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetSemiTimeTable.gz')"> </td>
 </tr>
 <tr>
 <td>BUSDATA</td>
+<td>臺北市</td>
 <td>定時車機資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/BUSDATA">http://data.taipei/bus/BUSDATA</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetBusData.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetBusData.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=c84f781f-02e7-45a4-84c2-0fc690749f66">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetBusData.gz')"> </td>
+</tr>
+<tr>
+<td>BUSDATA</td>
+<td>新北市</td>
+<td>定時車機資訊</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusData.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusData.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=b410f673-f17b-432b-9fea-26b93dd0aeeb">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusData.gz')"> </td>
 </tr>
 <tr>
 <td>BUSEVENT</td>
+<td>臺北市</td>
 <td>定點車機資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/BUSEVENT">http://data.taipei/bus/BUSEVENT</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetBusEvent.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetBusEvent.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=09672da0-772a-4bf2-9340-587941f958c5">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetBusEvent.gz')"> </td>
+</tr>
+<tr>
+<td>BUSEVENT</td>
+<td>新北市</td>
+<td>定點車機資訊</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusEvent.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusEvent.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=8c0351fd-37e2-4712-8771-c89f3b090e36">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetBusEvent.gz')"> </td>
 </tr>
 <tr>
 <td>IStopPath</td>
-<td>智慧型站牌所屬路線</td>
+<td>臺北市</td>
+<td>智慧型站牌</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/IStopPath">http://data.taipei/bus/IStopPath</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetIStop.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetIStop.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=6535d6cc-aabc-405c-9167-58a1d32823b9">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetIStop.gz')"> </td>
+</tr>
+<tr>
+<td>IStopPath</td>
+<td>新北市</td>
+<td>智慧型站牌</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStop.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStop.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=1155ff0c-453f-4849-b80e-7b66d19835b7">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStop.gz')"> </td>
 </tr>
 <tr>
 <td>IStop</td>
-<td>智慧型站牌</td>
+<td>臺北市</td>
+<td>智慧型站牌所屬路線</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/IStop">http://data.taipei/bus/IStop</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetIStopPath.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetIStopPath.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=e2ad1cbb-f7aa-4d3c-82d0-d770a7581d7f">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetIStopPath.gz')"> </td>
+</tr>
+<tr>
+<td>IStop</td>
+<td>新北市</td>
+<td>智慧型站牌所屬路線</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStopPath.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStopPath.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=fa9acdf6-6ba5-4127-a221-671eea99a3ec">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetIStopPath.gz')"> </td>
 </tr>
 <tr>
 <td>Stop</td>
+<td>臺北市</td>
 <td>站牌</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/Stop">http://data.taipei/bus/Stop</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetStop.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetStop.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=62bc76da-6e6b-46ee-8976-c1945092d504">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetStop.gz')"> </td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>新北市</td>
+<td>站牌</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStop.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStop.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=010244b7-c4ed-4b03-9436-c6cbe634d483">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStop.gz')"> </td>
 </tr>
 <tr>
 <td>CarUnusual</td>
+<td>臺北市</td>
 <td>車機異常資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/CarUnusual">http://data.taipei/bus/CarUnusual</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetCarUnusual.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetCarUnusual.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=ad5c0c55-bfee-4211-be1a-00f938e1bcec">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetCarUnusual.gz')"> </td>
+</tr>
+<tr>
+<td>CarUnusual</td>
+<td>新北市</td>
+<td>車機異常資訊</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarUnusual.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarUnusual.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=7873a48e-eb30-420b-bb32-ed1fa6868272">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetCarUnusual.gz')"> </td>
 </tr>
 <tr>
 <td>StopLocation</td>
+<td>臺北市</td>
 <td>站位資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/StopLocation">http://data.taipei/bus/StopLocation</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetStopLocation.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetStopLocation.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=ce7d3d2b-096f-4f2d-b7cf-cdd6a529f35c">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetStopLocation.gz')"> </td>
+</tr>
+<tr>
+<td>StopLocation</td>
+<td>新北市</td>
+<td>站位資訊</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStopLocation.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStopLocation.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=ae7cef90-6dfe-4fad-ad01-43113e924150">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetStopLocation.gzＳ')"> </td>
 </tr>
 <tr>
 <td>EstimateTime</td>
+<td>臺北市</td>
 <td>預估到站時間</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/bus/EstimateTime">http://data.taipei/bus/EstimateTime</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobbus/GetEstimateTime.gz">https://tcgbusfs.blob.core.windows.net/blobbus/GetEstimateTime.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=f11a5af0-7b37-48ef-98cc-f6f102ed43c6">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobbus/GetEstimateTime.gz')"> </td>
+</tr>
+<tr>
+<td>EstimateTime</td>
+<td>新北市</td>
+<td>預估到站時間</td>
+<td>每分鐘</td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/ntpcbus/GetEstimateTime.gz">https://tcgbusfs.blob.core.windows.net/ntpcbus/GetEstimateTime.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=1e26ecf6-d5b4-494b-b94f-bee64938dd64">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/ntpcbus/GetEstimateTime.gz')"> </td>
 </tr>
 </tbody>
 </table>
@@ -164,7 +338,9 @@
 <th>資料集</th>
 <th>說明</th>
 <th>頻率</th>
-<th>連結</th>
+<th>檔案連結</th>
+<th>資料集網址</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -172,7 +348,9 @@
 <td></td>
 <td>捷運列車到站資料</td>
 <td>每3分鐘</td>
-<td><a href="http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&amp;rid=55ec6d6e-dc5c-4268-a725-d04cc262172b">http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&amp;rid=55ec6d6e-dc5c-4268-a725-d04cc262172b</a></td>
+<td><a href="http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=55ec6d6e-dc5c-4268-a725-d04cc262172b">http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=55ec6d6e-dc5c-4268-a725-d04cc262172b</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=6556e1e8-c908-42d5-b984-b3f7337b139b">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=55ec6d6e-dc5c-4268-a725-d04cc262172b')"> </td>
 </tr>
 </tbody>
 </table>
@@ -232,7 +410,9 @@
 <th>資料集</th>
 <th>說明</th>
 <th>頻率</th>
-<th>連結</th>
+<th>檔案連結</th>
+<th>資料集網址</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -240,19 +420,25 @@
 <td>VD</td>
 <td>道路速率</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/tisv/VD">http://data.taipei/tisv/VD</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobtisv/GetVD.gz">https://tcgbusfs.blob.core.windows.net/blobtisv/GetVD.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=b5aaf33a-a6dc-4836-bce6-09986241fe11">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobtisv/GetVD.gz')"> </td>
 </tr>
 <tr>
 <td>VDDATA</td>
 <td>車輛偵測器(VD)資料</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/tisv/VDDATA">http://data.taipei/tisv/VDDATA</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobtisv/GetVDDATA.gz">https://tcgbusfs.blob.core.windows.net/blobtisv/GetVDDATA.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=e57afe7f-3c9e-4f31-9208-eed859a92600">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobtisv/GetVDDATA.gz')"> </td>
 </tr>
 <tr>
 <td>CMS</td>
 <td>資訊可變標誌(CMS)顯示內容</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/tisv/CMS">http://data.taipei/tisv/CMS</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobtisv/GetCMS.gz">https://tcgbusfs.blob.core.windows.net/blobtisv/GetCMS.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=2b7f8025-4261-41f2-91e1-f9cdde680ceb">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobtisv/GetCMS.gz')"> </td>
 </tr>
 </tbody>
 </table>
@@ -266,7 +452,9 @@
 <th>資料集</th>
 <th>說明</th>
 <th>頻率</th>
-<th>連結</th>
+<th>檔案連結</th>
+<th>資料集網址</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -274,13 +462,17 @@
 <td>TCMSV_ALLDESC</td>
 <td>臺北市停車場資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/tcmsv/alldesc">http://data.taipei/tcmsv/alldesc</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.gz">https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=d5c0656b-5250-4179-a491-c94daa56ef2c">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_alldesc.gz')"> </td>
 </tr>
 <tr>
 <td>TCMSV_ALLAVAILABLE</td>
 <td>剩餘停車位數</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/tcmsv/allavailable">http://data.taipei/tcmsv/allavailable</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.gz">https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=d5c0656b-5250-4179-a491-c94daa56ef2c">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobtcmsv/TCMSV_allavailable.gz')"> </td>
 </tr>
 </tbody>
 </table>
@@ -294,7 +486,9 @@
 <th>資料集</th>
 <th>說明</th>
 <th>頻率</th>
-<th>連結</th>
+<th>檔案連結</th>
+<th>資料集網址</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -302,7 +496,9 @@
 <td>youbike</td>
 <td>youbike即時資訊</td>
 <td>每分鐘</td>
-<td><a href="http://data.taipei/youbike">http://data.taipei/youbike</a></td>
+<td><a href="https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz">https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz</a></td>
+<td><a href="http://data.taipei/opendata/datalist/datasetMeta?oid=8ef1626a-892a-4218-8344-f7ac46e1aa48">data.taiepi</a></td>
+<td><input type="button" value="Copy" onclick="setClipboardText('https://tcgbusfs.blob.core.windows.net/blobyoubike/YouBikeTP.gz')"> </td>
 </tr>
 </tbody>
 </table>
